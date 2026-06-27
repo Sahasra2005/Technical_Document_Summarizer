@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document Summary</title>
+  <style>
+    body { font-family: Arial; margin: 40px; }
+    h1 { color: #333; }
+    .summary { background: #f9f9f9; padding: 20px; border-left: 5px solid #007acc; }
+    .full-text { margin-top: 40px; color: #555; }
+  </style>
+</head>
+<body>
+  <h1>Document Summary</h1>
+  <div class="summary">
+    <ul>
+      {% for sentence in summary %}
+        <li>{{ sentence }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="full-text">
+    <h2>Full Text</h2>
+    <p>{{ full_text }}</p>
+  </div>
+</body>
+</html>

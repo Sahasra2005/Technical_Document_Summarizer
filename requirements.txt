@@ -1,0 +1,10 @@
+spacy
+pdfminer.six
+python-docx
+jinja2
+weasyprint
+reportlab
+PyMuPDF
+sumy
+transformers
+torch
